@@ -19,6 +19,7 @@ color.setPalette(
 color.originalPalette
 )
 music.playMelody("E B C5 A B G A F ", 120)
+controller.startLightAnimation(light.runningLightsAnimation, 1000)
 game.splash("Microsoft Pocket Demo")
 scene.setBackgroundColor(7)
 let mySprite = sprites.create(img`
@@ -60,3 +61,4 @@ food1 = sprites.create(img`
 controller.moveSprite(mySprite)
 info.startCountdown(10)
 info.setLife(5)
+let myMinimap = minimap.minimap()
